@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AnimeRealm - Checkout Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div>
+        <h1 class="brand-title">AnimeRealm</h1>
+        <p class="brand-subtitle">Template: Checkout (Cart + Payment Form)</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Site navigation">
+        <a class="nav-pill" href="../index.html">Style Guide</a>
+        <a class="nav-pill" href="listing.html">Listing</a>
+        <a class="nav-pill" href="checkout.html" aria-current="page">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="page-hero">
+      <h2>Checkout</h2>
+      <p class="muted">Responsive structure demo: cart and form stack on small screens.</p>
+    </section>
+
+    <section class="checkout-layout">
+      <section class="card">
+        <h3>Cart</h3>
+
+        <table class="table">
+          <caption>Cart summary</caption>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Figure – Jeanne d’Arc</td>
+              <td>1</td>
+              <td>$189.00</td>
+            </tr>
+            <tr>
+              <td>Acrylic Stand – Bocchi</td>
+              <td>1</td>
+              <td>$25.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Total</th>
+              <td>$214.00</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p class="tiny muted">Sources for product references are listed in the style guide citations.</p>
+        <div class="row">
+          <a class="link-muted" href="../index.html#citations">View citations</a>
+          <a class="link-muted" href="listing.html">Back to listing</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Payment form</h3>
+
+        <form class="form-stack" action="#" method="post">
+          <fieldset>
+            <legend>Customer information</legend>
+
+            <p>
+              <label for="full_name">Full name</label><br>
+              <input id="full_name" name="full_name" type="text" autocomplete="name">
+            </p>
+
+            <p>
+              <label for="email">Email</label><br>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </p>
+
+            <p>
+              <label for="address">Shipping address</label><br>
+              <input id="address" name="address" type="text" autocomplete="street-address">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Shipping</legend>
+            <p><input id="s1" name="ship" type="radio"> <label for="s1">Standard (5–10 business days)</label></p>
+            <p><input id="s2" name="ship" type="radio"> <label for="s2">Express (2–4 business days)</label></p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment method</legend>
+            <p><input id="p1" name="pay" type="radio"> <label for="p1">Credit / Debit Card</label></p>
+            <p><input id="p2" name="pay" type="radio"> <label for="p2">PayPal</label></p>
+
+            <p>
+              <label for="card">Card number</label><br>
+              <input id="card" name="card" type="text" inputmode="numeric">
+            </p>
+          </fieldset>
+
+          <div class="row">
+            <button type="submit">Place order</button>
+            <button type="reset">Reset</button>
+            <a class="btn" href="../index.html">Back to style guide</a>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
