@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div>
+        <h1 class="brand-title">AnimeRealm</h1>
+      </div>
+
+      <nav class="site-nav" aria-label="Site navigation">
+        <a class="nav-pill" href="../index.html">Style Guide</a>
+        <a class="nav-pill" href="listing.html">Listing</a>
+        <a class="nav-pill" href="checkout.html">Checkout</a>
+        <a class="nav-pill" href="updates.html">Updates</a>
+        <a class="nav-pill" href="about.html">About</a>
+        <a class="nav-pill" href="contact.html">Contact</a>
+        <a class="nav-pill" href="feedback.html" aria-current="page">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="page-hero">
+      <h2>Product Feedback</h2>
+      <p class="muted">Tell us what you think about a product or our service.</p>
+    </section>
+
+    <section class="card">
+      <h3>Leave a review</h3>
+
+      <form class="form-stack" action="#" method="post">
+        <p>
+          <label for="product">Product</label><br>
+          <input id="product" name="product" type="text" placeholder="e.g., Figure – Jeanne d’Arc">
+        </p>
+
+        <p>
+          <label for="name">Your name</label><br>
+          <input id="name" name="name" type="text" autocomplete="name">
+        </p>
+
+        <p>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" autocomplete="email">
+        </p>
+
+        <fieldset>
+          <legend>Rating</legend>
+          <p><input id="rate1" name="rating" type="radio"> <label for="rate1">1 Star</label></p>
+          <p><input id="rate2" name="rating" type="radio"> <label for="rate2">2 Stars</label></p>
+          <p><input id="rate3" name="rating" type="radio"> <label for="rate3">3 Stars</label></p>
+          <p><input id="rate4" name="rating" type="radio"> <label for="rate4">4 Stars</label></p>
+          <p><input id="rate5" name="rating" type="radio"> <label for="rate5">5 Stars</label></p>
+        </fieldset>
+
+        <p>
+          <label for="message">Comments</label><br>
+          <textarea id="message" name="message" placeholder="Write your feedback..."></textarea>
+        </p>
+
+        <div class="row">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <a class="btn" href="listing.html">Back to listing</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer wrap muted tiny">
+    © 2026 AnimeRealm. All rights reserved.
+  </footer>
+</body>
+</html>
