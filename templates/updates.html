@@ -7,32 +7,82 @@
 </head>
 
 <body>
+
+  <!-- Site Header (same structure as index) -->
   <header class="site-header">
-    <nav class="nav">
-      <a href="../index.html">Style Guide</a>
-      <a href="listing.html">Products</a>
-      <a href="updates.html">Updates</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="wrap header-grid">
+      <div>
+        <h1 class="brand-title">P02 Company</h1>
+        <p class="brand-subtitle">Collectibles & Character Goods</p>
+      </div>
+
+      <nav class="site-nav">
+        <a class="nav-pill" href="../index.html">Style Guide</a>
+        <a class="nav-pill" href="listing.html">Products</a>
+        <a class="nav-pill" href="updates.html">Updates</a>
+        <a class="nav-pill" href="about.html">About</a>
+        <a class="nav-pill" href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <h1>Company Updates & Events</h1>
+  <main class="wrap">
 
-    <section class="updates-list">
-      <article class="update-card">
-        <h2>New Product Launch</h2>
-        <p class="date">February 5, 2026</p>
-        <p>We launched our new acrylic stand series featuring original character designs.</p>
-      </article>
-
-      <article class="update-card">
-        <h2>Pop-up Store Event</h2>
-        <p class="date">January 20, 2026</p>
-        <p>Visit our limited-time pop-up store in Vancouver for exclusive merchandise.</p>
-      </article>
+    <!-- Page intro -->
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Company Updates & Events</h2>
+        <p class="section-note">
+          News, announcements, and important notices from our team.
+        </p>
+      </div>
     </section>
+
+    <!-- Updates list -->
+    <section class="section-block">
+      <div class="stack">
+
+        <article class="notice">
+          <h3>New Product Launch</h3>
+          <p class="muted tiny">February 5, 2026</p>
+          <p>
+            We launched our new acrylic stand series featuring original
+            character designs and limited-edition packaging.
+          </p>
+        </article>
+
+        <article class="notice">
+          <h3>Shipping Schedule Update</h3>
+          <p class="muted tiny">February 3, 2026</p>
+          <p>
+            Due to seasonal demand, orders may take an additional
+            2–3 business days to process and ship.
+          </p>
+        </article>
+
+        <article class="notice">
+          <h3>Upcoming Convention Event</h3>
+          <p class="muted tiny">January 28, 2026</p>
+          <p>
+            Visit our booth at the Spring Creators Market to see
+            exclusive products and event-only discounts.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Back to products -->
+    <section class="section-block">
+      <a class="btn" href="listing.html">View Products</a>
+    </section>
+
   </main>
+
+  <footer class="footer wrap muted tiny">
+    © 2026 P02 Company. All rights reserved.
+  </footer>
+
 </body>
+
 </html>
