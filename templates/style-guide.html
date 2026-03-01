@@ -1,0 +1,422 @@
+<!-- Mulin Zhang
+Lingzhi Yang -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AnimeRealm — Official Website & Style Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="..css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sticky global nav: links all pages together -->
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div>
+        <h1 class="brand-title">AnimeRealm</h1>
+      </div>
+
+      <nav class="site-nav" aria-label="Site navigation">
+        <a class="nav-pill" href="templates/home.html">Home</a>
+        <a class="nav-pill" href="index.html" aria-current="page">Style Guide</a>
+        <a class="nav-pill" href="templates/listing.html">Listing</a>
+        <a class="nav-pill" href="templates/checkout.html">Checkout</a>
+        <a class="nav-pill" href="templates/updates.html">Updates</a>
+        <a class="nav-pill" href="templates/about.html">About</a>
+        <a class="nav-pill" href="templates/contact.html">Contact</a>
+         <a class="nav-pill" href="templates/feedback.html">Feedback</a>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Page intro: big to small text, like the provided template -->
+    <header class="page-hero">
+      <h1>AnimeRealm</h1>
+      <p class="muted">Official website & consolidated style guide</p>
+    </header>
+
+    <!-- =========================================================
+         ATOMS
+    ========================================================== -->
+    <section class="section-block" id="atoms">
+      <div class="section-head">
+        <h2>Atoms</h2>
+        <p class="section-note">Smallest elements: links, buttons, inputs, headings, lists.</p>
+      </div>
+
+      <section class="section-block">
+      <div class="section-head">
+        <h2>Design System & Style Guide</h2>
+        <p class="section-note">
+          This section documents the design system used across the AnimeRealm website,
+          including UI components, layouts, and interaction patterns.
+        </p>
+      </div>
+      </section>
+
+
+      <div class="grid-2">
+        <!-- Interactive Elements: matches the provided template structure -->
+        <section class="card">
+          <h3>Interactive Elements</h3>
+
+          <h4>In-text link</h4>
+          <p>
+            This is an <a href="#citations">in-text link</a> inside a paragraph.
+          </p>
+
+          <h4>Navigation Link</h4>
+          <p class="muted">CSS selector: <code>.button-nav</code></p>
+
+          <div class="code-block">
+            <p class="code-title">Sample code:</p>
+            <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+            <p class="code-title">Rendered element:</p>
+            <a class="button-nav" href="#">Default Button</a>
+          </div>
+
+          <h4>Image as a Link</h4>
+          <p class="muted">Clickable image with hover response.</p>
+          <a class="img-link" href="templates/listing.html">
+            <img src="photo/Figure.png" alt="Linked product image example">
+          </a>
+        </section>
+
+        <!-- Text atoms -->
+        <section class="card">
+          <h3>Text Elements</h3>
+          <h1 class="demo-h1">Collection Drop</h1>
+          <h2 class="demo-h2">Featured Items</h2>
+          <p>
+            AnimeRealm groups products into themed drops and keeps product information clear and consistent.
+            Read the <a href="#citations">citations</a> section for sources.
+          </p>
+          <ol>
+            <li>Browse products and open a detail view.</li>
+            <li>Add item(s) to cart and review totals.</li>
+            <li>Proceed to checkout and place the order.</li>
+          </ol>
+        </section>
+
+        <!-- Form atoms -->
+        <section class="card">
+          <h3>Form Elements</h3>
+          <form class="form-stack" action="#" method="post">
+            <p>
+              <label for="email_atom">Email</label><br>
+              <input id="email_atom" name="email_atom" type="email" autocomplete="email">
+            </p>
+
+            <fieldset>
+              <legend>Shipping speed</legend>
+              <p><input id="r1" name="ship" type="radio"> <label for="r1">Standard</label></p>
+              <p><input id="r2" name="ship" type="radio"> <label for="r2">Express</label></p>
+            </fieldset>
+
+            <div class="row">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Button atoms -->
+        <section class="card">
+          <h3>Buttons</h3>
+          <p class="muted">Primary call-to-action style used across templates.</p>
+          <div class="row">
+            <a class="btn" href="templates/listing.html">View details</a>
+            <a class="btn btn-strong" href="templates/checkout.html">Go to checkout</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         MOLECULES
+    ========================================================== -->
+    <section class="section-block" id="molecules">
+      <div class="section-head">
+        <h2>Molecules</h2>
+        <p class="section-note">Small combinations: mini navigation, product card.</p>
+      </div>
+
+      <div class="grid-2">
+        <section class="card">
+          <h3>Mini navigation</h3>
+          <nav class="mini-nav" aria-label="Mini store navigation">
+            <a href="templates/listing.html">All Products</a>
+            <a href="templates/checkout.html">Cart</a>
+            <a href="templates/checkout.html">Checkout</a>
+          </nav>
+        </section>
+
+        <section class="card">
+          <h3>Product card</h3>
+          <article class="product-card">
+            <a class="product-media" href="templates/listing.html">
+              <img src="photo/Figure.png" alt="Jeanne d’Arc figure">
+            </a>
+            <div class="product-body">
+              <h4 class="product-title">Figure – Jeanne d’Arc</h4>
+              <p class="product-meta">Price: $189.00</p>
+              <div class="row">
+                <a class="btn" href="templates/listing.html">View details</a>
+                <a class="link-muted" href="templates/checkout.html">Add to cart</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ORGANISMS
+    ========================================================== -->
+    <section class="section-block" id="organisms">
+      <div class="section-head">
+        <h2>Organisms</h2>
+        <p class="section-note">Larger sections built from molecules: updates + product grid.</p>
+      </div>
+
+      <div class="grid-2">
+      <section class="card">
+        <h3>Company Updates</h3>
+
+        <div class="stack">
+          <article class="notice">
+            <h4>New Product Launch</h4>
+            <p class="date">February 5, 2026</p>
+            <p>
+              We launched our new acrylic stand series featuring original character designs.
+            </p>
+          </article>
+
+          <article class="notice">
+            <h4>Upcoming Event</h4>
+            <p class="date">February 12, 2026</p>
+            <p>
+              Visit our booth at the winter creator market to see new prototypes and limited items.
+            </p>
+          </article>
+        </div>
+
+        <div class="row" style="margin-top:.75rem;">
+          <a class="btn" href="templates/updates.html">
+            View all updates & events
+          </a>
+        </div>
+      </section>
+
+
+        <section class="card">
+          <h3>Product listing grid (component)</h3>
+          <div class="product-grid">
+            <article class="mini-product">
+              <img src="photo/Figure.png" alt="Figure product image">
+              <div>
+                <h4>Figure</h4>
+                <p class="muted">$189.00</p>
+              </div>
+            </article>
+            <article class="mini-product">
+              <img src="photo/Acrylic stand.png" alt="Acrylic stand product image">
+              <div>
+                <h4>Acrylic Stand</h4>
+                <p class="muted">$25.00</p>
+              </div>
+            </article>
+            <article class="mini-product">
+              <img src="photo/Clay doll.png" alt="Plush doll product image">
+              <div>
+                <h4>Plush Doll</h4>
+                <p class="muted">$39.00</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="row" style="margin-top:.75rem;">
+            <a class="btn" href="templates/listing.html">Open full listing template</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TEMPLATES
+    ========================================================== -->
+    <section class="section-block" id="templates">
+      <div class="section-head">
+        <h2>Templates</h2>
+        <p class="section-note">Responsive page structures built from the style guide elements.</p>
+      </div>
+
+      <div class="grid-2">
+        <section class="card template-card">
+          <h3>Template 1: Product / Service Listing</h3>
+          <p class="muted">Includes navigation + multiple product listing. Responsive grid.</p>
+          <div class="row">
+            <a class="btn btn-strong" href="templates/listing.html">Open Listing Template</a>
+          </div>
+          <p class="tiny muted">Resize the browser to see the grid change columns.</p>
+        </section>
+
+        <section class="card template-card">
+          <h3>Template 2: Checkout</h3>
+          <p class="muted">Includes navigation + cart + payment form. Responsive layout.</p>
+          <div class="row">
+            <a class="btn btn-strong" href="templates/checkout.html">Open Checkout Template</a>
+          </div>
+          <p class="tiny muted">Resize the browser to see cart + form stack on small screens.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         BRANDING (moved after Templates, per instructor feedback)
+    ========================================================== -->
+    <section class="section-block" id="branding">
+      <div class="section-head">
+        <h2>Branding</h2>
+        <p class="section-note">Type + colour + imagery direction shown together.</p>
+      </div>
+
+      <div class="grid-3">
+        <section class="card">
+          <h3>Typography</h3>
+          <p class="muted">Headings / body / navigation / buttons.</p>
+
+          <div class="type-sample">
+            <div class="type-row"><span class="tag">H1</span><span class="sample-h1">Collection Drop</span></div>
+            <div class="type-row"><span class="tag">H2</span><span class="sample-h2">Featured Items</span></div>
+            <div class="type-row"><span class="tag">Body</span><span>Clear details. Simple checkout. Honest shipping notes.</span></div>
+            <div class="type-row"><span class="tag">Nav</span>
+              <span class="mini-nav">
+                <a href="templates/listing.html">All Products</a>
+                <a href="templates/checkout.html">Cart</a>
+                <a href="templates/checkout.html">Checkout</a>
+              </span>
+            </div>
+            <div class="type-row"><span class="tag">Button</span><span><a class="btn" href="templates/listing.html">View details</a></span></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Colour palette</h3>
+          <p class="muted">Used to communicate actions, links, and highlights.</p>
+
+          <ul class="swatch-list">
+            <li><span class="swatch sw-primary"></span> Primary: #6C63FF</li>
+            <li><span class="swatch sw-secondary"></span> Secondary: #00C2FF</li>
+            <li><span class="swatch sw-accent"></span> Accent: #FF4D8D</li>
+            <li><span class="swatch sw-bg"></span> Background: #FFFFFF</li>
+            <li><span class="swatch sw-text"></span> Text: #1A1A1A</li>
+            <li><span class="swatch sw-muted"></span> Muted UI: #F3F4F6</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Imagery direction</h3>
+          <p class="muted">Product-first images, simple backgrounds, light “drop” banners.</p>
+
+          <figure class="figure">
+            <img src="photo/Figure.png" alt="Sample product photo (figure)">
+            <figcaption>Product image style (clean, product-first)</figcaption>
+          </figure>
+
+          <div class="banner">
+            <div class="banner-title">Drop banner</div>
+            <div class="banner-sub">Festival / Arcade / Winter themes</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Brand concept card -->
+      <section class="card brand-concept">
+        <h3>Brand concept & audience</h3>
+
+        <h4>What does the company do, or offer?</h4>
+        <p>
+          AnimeRealm sells anime-inspired merchandise such as figures, acrylic stands,
+          and plush dolls. Each product includes a detailed view with materials, sizing,
+          pricing, and shipping notes.
+        </p>
+
+        <h4>Who is the company for?</h4>
+        <p>
+          AnimeRealm is designed for anime fans who value clarity and reliability.
+          It targets collectors and casual fans who want a calm, trustworthy shopping
+          experience rather than a visually cluttered marketplace.
+        </p>
+
+        <h4>Why might this brand entice someone to purchase?</h4>
+        <p>
+          Limited “drops,” transparent promotions, and clearly presented product details
+          help customers feel confident in their purchases. Reviews and ratings further
+          support informed decision-making.
+        </p>
+
+        <div class="row" style="margin-top:1rem;">
+        <a class="btn" href="templates/about.html">About the brand</a>
+        <a class="btn" href="templates/contact.html">Contact us</a>
+        </div>
+
+
+        <div class="row" style="margin-top:0.75rem;">
+         <a class="btn" href="templates/about.html">
+              View full About page
+         </a>
+        </div>
+
+      </section>
+    </section>
+
+    <!-- =========================================================
+         CITATIONS
+    ========================================================== -->
+    <section class="section-block" id="citations">
+      <div class="section-head">
+        <h2>Citations</h2>
+        <p class="section-note">Consistent format used for all non-original materials.</p>
+      </div>
+
+      <ul class="citation-list">
+        <li>
+          <span class="cite-label">[Image]</span>
+          Jeanne figure reference. <span class="cite-site">Sakurairo</span>.
+          <a href="https://sakurairo.shoplineapp.com/products/pup-jeanne">https://sakurairo.shoplineapp.com/products/pup-jeanne</a>
+        </li>
+        <li>
+          <span class="cite-label">[Image]</span>
+          Bocchi acrylic stand reference. <span class="cite-site">Sakurairo</span>.
+          <a href="https://sakurairo.shoplineapp.com/products/bocchi-11standb">https://sakurairo.shoplineapp.com/products/bocchi-11standb</a>
+        </li>
+        <li>
+          <span class="cite-label">[Image]</span>
+          EVA plush doll reference. <span class="cite-site">Sakurairo</span>.
+          <a href="https://sakurairo.shoplineapp.com/products/s-fire-fuwa-petit-eva-">https://sakurairo.shoplineapp.com/products/s-fire-fuwa-petit-eva-</a>
+        </li>
+        <li>
+          <span class="cite-label">[Font]</span>
+          System UI font stack (built-in OS fonts). No external font files used.
+        </li>
+        <li>
+          <span class="cite-label">[Icons]</span>
+          Emoji icons are Unicode characters (no external icon pack used).
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p class="tiny muted">P01 AnimeRealm Style Guide — includes links to responsive templates.</p>
+    </footer>
+  </main>
+</body>
+</html>
